@@ -1,4 +1,4 @@
-# unofficial-valorant-api (v.2.6.0)
+# unofficial-valorant-api (v.3.0.0)
 Unofficial Valorant API by using the Ingame API
 <br>
 
@@ -45,7 +45,7 @@ There are also some Rate Limit Adjustments:
 What is not allowed?
 - Big analytic projects
     - Why? Because of data privacy. Rito set RSO as a requirement for their official API because the VAL Team said they want to protect the users data. Since I dont want to get into trouble with Riot and want to keep up the API as long as possible for normal developers out there this is a requirement
-- Public store trackers / websites / bots
+- Public store trackers / store websites / store bots
     - Why? Because it's simply not allowed and the risk of scamming accounts is also way to high. If it's a private project for a couple of friends you will receive a key, but as soon as I find out that the project is used in the public the key will get revoked.
 
 # Error codes
@@ -70,6 +70,11 @@ Here are the error codes for the VALORANT API that could come up. There will alw
 | 113 | Invalid match or player id |
 | 114 | Invalid country code |
 | 115 | Invalid season |
+| 116 | Multiple queries detected. Make sure to only request one query for this query type. |
+| 117 | Missing query |
+| 118 | Query 'page' and 'size' must be a valid number |
+| 119 | Query 'page' must be greater then 0 |
+| 120 | Query 'size' must be greater then 0 |
 
 # Status 403 - Forbidden
 If you receive this status code, please ping me on the support discord or contact me over my mail or discord that are linked on the bottom of this page.
@@ -78,15 +83,16 @@ If you receive this status code, please ping me on the support discord or contac
 See the current status of the API here: https://status.henrikdev.xyz/
 
 # Documentation
-The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API
+The documention for the API is available under https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API (not updated to v3 yet)
   
 # Projects using this API
 - https://github.com/Henrik-3/valorant-labs
 - [VALO DE Discord](https://discord.gg/valode) Rolesystem
 
 # Wrapper
-- [x] JS - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0]
-- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.5.2]
+- [x] JavaScript - **https://www.npmjs.com/package/unofficial-valorant-api** [API v.2.3.0] [Outdated]
+- [x] Python - **https://github.com/raimannma/ValorantAPI** [API v.2.6.1]
+- [x] Java - **https://github.com/SocketC0nnection/JVA** (by @SocketC0nnection) [API v.2.6.2]
 - [x] C# - **https://github.com/ValorantAppDevelopers/Valorant-NET/tree/master** [API v.1.6.2] [Outdated]
 
 # Legal
@@ -105,4 +111,4 @@ Consider checking out https://valorant-api.com if you need any images from the g
 # Other Stuff
 Also would be happy if you give the project a star and give credit when you use it. If you wanna help me to pay the server instance (16€ per month) or want to support my work, you can help me via patreon: [Link](https://www.patreon.com/henrikdev).
 
-If you have any questions write on Discord: Henrik3#1451 or on the support server or write me an email to contact@henrikdev.xyz. 
+If you have any questions write on Discord: @henrik3 or on the support server or write me an email to contact@henrikdev.xyz. 
